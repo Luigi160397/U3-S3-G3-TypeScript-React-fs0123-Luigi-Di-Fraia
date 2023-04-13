@@ -1,0 +1,8 @@
+#articleImg {
+  object-fit: cover;
+}
+
+#contImg {
+  max-height: 400px;
+  overflow: hidden;
+}
