@@ -5,12 +5,12 @@ import { NewsProps } from "../interfaces/INotizia";
 const Notizia = ({ imageUrl, title, newsSite, id }: NewsProps) => {
   const navigate = useNavigate();
   return (
-    <Card>
-      <Card.Img variant="top" src={imageUrl} />
+    <Card className="text-center">
+      <Card.Img className="img-fluid" variant="top" src={imageUrl} id="cardImg" />
       <Card.Body>
-        <Card.Title>{title}</Card.Title>
+        <Card.Title className="text-truncate">{title}</Card.Title>
         <Card.Text>{newsSite}</Card.Text>
-        <Button onClick={() => navigate(`/detail/${id}`)} variant="primary">
+        <Button onClick={() => navigate(`/detail/${id}`)} variant="outline-secondary">
           Discover more
         </Button>
       </Card.Body>

@@ -6,3 +6,8 @@
   max-height: 400px;
   overflow: hidden;
 }
+
+#cardImg {
+  object-fit: cover;
+  height: 200px;
+}

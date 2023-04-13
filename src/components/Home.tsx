@@ -25,8 +25,8 @@ const Home = () => {
   }, []);
 
   return (
-    <Container>
-      <Row xs={2} md={4} lg={5}>
+    <Container className="pt-5 pb-5">
+      <Row xs={2} md={4} lg={3} className="gy-3 gx-3">
         {notizie.map(notizia => (
           <Col key={notizia.id}>
             <Notizia imageUrl={notizia.imageUrl} title={notizia.title} newsSite={notizia.newsSite} id={notizia.id} />
